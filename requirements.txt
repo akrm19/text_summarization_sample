@@ -1,0 +1,8 @@
+tiktoken 
+langchain 
+langgraph 
+beautifulsoup4 
+langchain-community
+langchain-ollama==0.2.3
+python-dotenv
+
