@@ -2,3 +2,7 @@
 .python-version
 __pycache__
 **/__pycache__
+__pycache__/**
+.langgraph_api
+.idea
+__pycache__**
