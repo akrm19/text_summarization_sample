@@ -19,7 +19,7 @@ from langchain.chains.combine_documents.reduce import (
 from map_reduce_summarizer.state import SummaryState, OverallState
 from text_utils import get_docs_from_url, split_text
 
-llm = ChatOllama(model="llama3.2", temperature=0)
+llm = ChatOllama(model="phi4", temperature=0)
 token_max = 1000
 
 # Prompts
@@ -119,7 +119,7 @@ def generate_final_summary(state: OverallState):
 
 builder = StateGraph(OverallState)
 # nodes
-builder.add_node("get_content", get_content)
+#builder.add_node("get_content", get_content)
 #builder.add_node("map_summaries", map_summaries)
 builder.add_node("generate_summary", generate_summary)
 builder.add_node("collect_summaries", collect_summaries)
