@@ -1,0 +1,11 @@
+{
+    "dockerfile_lines": [],
+    "graphs": {
+      "map_reduce_summarizer": "./src/map_reduce_summarizer/graph.py:map_reduce_graph"
+    },
+    "python_version": "3.12",
+    "env": "./.env",
+    "dependencies": [
+      "requirements.txt"
+    ]
+  }

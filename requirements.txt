@@ -1,6 +1,6 @@
 tiktoken 
 langchain 
-langgraph 
+langgraph==0.2.70
 beautifulsoup4 
 langchain-community
 langchain-ollama==0.2.3
