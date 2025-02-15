@@ -16,3 +16,10 @@ def split_text(docs: List[Document], chunk_size: int = 1000, chunk_overlap: int 
     )
     split_docs = text_splitter.split_documents(docs)
     return split_docs
+
+def get_split_page_content_from_url(url: str, chunk_size: int = 1000, chunk_overlap: int = 0) -> List[str]:
+    docs = get_docs_from_url(url)
+    split_docs = split_text(docs, chunk_size, chunk_overlap)
+    page_content = [doc.page_content for doc in split_docs]
+    return page_content
+
